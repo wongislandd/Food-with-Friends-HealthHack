@@ -26,7 +26,7 @@
         android:id="@+id/switch2"
         android:layout_width="match_parent"
         android:layout_height="97dp"
-        android:text="@string/check_in"
+        android:text="Check In"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="25sp" />
 
