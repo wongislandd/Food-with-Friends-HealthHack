@@ -91,6 +91,9 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                     }
                 });
+        reloadProfilePage();
+    }
+    public void reloadProfilePage(){
         Intent intent = new Intent(RegisterActivity.this, ProfilePageActivity.class);
         startActivity(intent);
     }
