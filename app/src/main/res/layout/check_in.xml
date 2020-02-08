@@ -19,26 +19,26 @@
         android:layout_width="match_parent"
         android:layout_height="133dp"
         android:baselineAligned="false"
-        tools:srcCompat="@mipmap/mapicon"
-        android:contentDescription="TODO" />
+        android:contentDescription="TODO"
+        tools:srcCompat="@mipmap/mapicon" />
 
     <Switch
-        android:id="@+id/switch2"
+        android:id="@+id/switch1"
         android:layout_width="match_parent"
-        android:layout_height="97dp"
+        android:layout_height="95dp"
         android:text="East Side Dining"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="22sp" />
 
     <Switch
-        android:id="@+id/switch3"
+        android:id="@+id/switch2"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_height="95dp"
         android:text="West Side Dining"
         android:textSize="22sp" />
 
     <Switch
-        android:id="@+id/switch4"
+        android:id="@+id/switch3"
         android:layout_width="match_parent"
         android:layout_height="95dp"
         android:text="Jasmine"
