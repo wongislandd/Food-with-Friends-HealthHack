@@ -27,7 +27,7 @@ public class CheckInActivity extends AppCompatActivity {
         Switch switch3 = this.findViewById(R.id.switch3);
         Switch switch4 = this.findViewById(R.id.switch4);
         Switch switch5 = this.findViewById(R.id.switch5);
-        switch1.setOnClickListener(new View.OnClickListener(){
+      /*  switch1.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
@@ -39,7 +39,7 @@ public class CheckInActivity extends AppCompatActivity {
                 //mp.start();
             }
         });
-
+*/
 
     }
     public void goToProfile(View view) {

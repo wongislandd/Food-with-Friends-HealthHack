@@ -1,7 +1,6 @@
 package com.example.foodwithfriends;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,12 +16,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.UserInfo;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-
-import org.w3c.dom.Text;
 
 public class ProfilePageActivity extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -52,7 +48,7 @@ public class ProfilePageActivity extends AppCompatActivity {
                         TextView profile_pref = findViewById(R.id.profile_pref);
                         TextView profile_bio = findViewById(R.id.profile_bio);
                         ImageView profile_pic = findViewById(R.id.profile_picture);
-                        TextView profile_status = findViewById(R.id.status);
+                        TextView profile_status = findViewById(R.id.profile_status);
                         profile_name.setText(document.getString("Name"));
                         profile_major.setText(document.getString("Major"));
                         profile_pref.setText(document.getString("Pref"));
