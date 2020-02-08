@@ -80,6 +80,7 @@
         android:id="@+id/hajime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="Hajime"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="334dp" />

@@ -79,8 +79,9 @@ public class RegisterActivity extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
-                .setDisplayName(names + "zz" + majors + "yy" + prefs + "xx" + bios + "ww" + "none")
+                .setDisplayName(names + "zz" + majors + "yy" + prefs + "xx" + bios + "ww" + "None")
                 .build();
+
         user.updateProfile(profileUpdates)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
@@ -90,6 +91,9 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                     }
                 });
+        reloadProfilePage();
+    }
+    public void reloadProfilePage(){
         Intent intent = new Intent(RegisterActivity.this, ProfilePageActivity.class);
         startActivity(intent);
     }

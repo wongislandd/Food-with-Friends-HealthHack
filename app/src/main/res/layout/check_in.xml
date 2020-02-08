@@ -17,32 +17,47 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="126dp"
+        android:layout_height="90dp"
         android:baselineAligned="false"
-        android:contentDescription="TODO"
-        app:srcCompat="@mipmap/mapicon"
-        tools:srcCompat="@mipmap/mapicon" />
+        android:contentDescription=""
+        app:srcCompat="@drawable/ic_location_on_black_24dp"
+        tools:srcCompat="@drawable/ic_location_on_black_24dp" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:text="East Side Dining"
+        android:layout_height="90dp"
+        android:text="  East Side Dining"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="22sp" />
 
     <Switch
         android:id="@+id/switch2"
         android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:text="West Side Dining"
+        android:layout_height="90dp"
+        android:text="  West Side Dining"
         android:textSize="22sp" />
 
     <Switch
         android:id="@+id/switch3"
         android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:text="Jasmine"
+        android:layout_height="90dp"
+        android:text="  Jasmine"
+        android:textAllCaps="false"
+        android:textSize="22sp" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="  Roth Cafe"
+        android:textSize="22sp" />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="  SAC Food Court"
         android:textSize="22sp" />
 
 </LinearLayout>
