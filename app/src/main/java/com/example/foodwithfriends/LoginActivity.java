@@ -101,7 +101,6 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
-
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -152,6 +151,7 @@ public class LoginActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(LoginActivity.this, "SUCCESS.",
                                     Toast.LENGTH_SHORT).show();
+                                    goToRegisterPage();
 
                         } else {
                             // If sign in fails, display a message to the user.
@@ -172,6 +172,10 @@ public class LoginActivity extends AppCompatActivity {
 
     public void goToFriendsPage(){
         Intent intent = new Intent(LoginActivity.this, MyFriendsActivity.class);
+        startActivity(intent);
+    }
+    public void goToRegisterPage(){
+        Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
         startActivity(intent);
     }
     public void goToProfilePage(){
