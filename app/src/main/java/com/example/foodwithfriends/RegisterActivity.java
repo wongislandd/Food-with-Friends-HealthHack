@@ -25,9 +25,15 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     private static final String TAG = "RegisterActivity";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,8 +50,17 @@ public class RegisterActivity extends AppCompatActivity {
         Complete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                goToProfilePage(name.getText().toString(), major.getText().toString(), pref.getText().toString(), bio.getText().toString());
+                Map<String, Object> user = new HashMap<>();
+                user.put("Name", name.getText().toString());
+                user.put("Major", major.getText().toString());
+                user.put("Pref", pref.getText().toString());
+                user.put("Bio", bio.getText().toString());
+                user.put("Status", "Nowhere");
+                // Write a message to the database
+                db.collection("users")
+                        .document(mAuth.getCurrentUser().getUid()).set(user
+                );
+                goToProfilePage();
             }
         });
 
@@ -75,25 +90,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-    public void goToProfilePage(String names, String majors, String prefs, String bios){
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-
-        UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
-                .setDisplayName(names + "zz" + majors + "yy" + prefs + "xx" + bios + "ww" + "None")
-                .build();
-
-        user.updateProfile(profileUpdates)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            Log.d(TAG, "User profile updated.");
-                        }
-                    }
-                });
-        reloadProfilePage();
-    }
-    public void reloadProfilePage(){
+    public void goToProfilePage(){
         Intent intent = new Intent(RegisterActivity.this, ProfilePageActivity.class);
         startActivity(intent);
     }
