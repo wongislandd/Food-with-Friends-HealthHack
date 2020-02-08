@@ -17,23 +17,19 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+
 
 public class LoginActivity extends AppCompatActivity {
-    private FirebaseAuth mAuth;
     private static final String TAG = "LoginActivity";
     @Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         // Initialize Firebase Auth
-        mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
