@@ -9,47 +9,63 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserInfo;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.w3c.dom.Text;
 
 public class ProfilePageActivity extends AppCompatActivity {
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     private FirebaseAuth mAuth;
+    private static final String TAG = "ProfilePageActivity";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile_page);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        String data = "";
-        if (user != null) {
-            for (UserInfo profile : user.getProviderData()) {
-                data = profile.getDisplayName();
-            }
-        }
 
-        final TextView profile_name = findViewById(R.id.profile_name);
-        final TextView profile_major = findViewById(R.id.profile_major);
-        final TextView profile_pref = findViewById(R.id.profile_pref);
-        final TextView profile_bio = findViewById(R.id.profile_bio);
-        final ImageView profile_pic = findViewById(R.id.profile_picture);
-        final TextView profile_status = findViewById(R.id.status);
+
         final Button friend_button = findViewById(R.id.friend_button);
         final Button check_button = findViewById(R.id.checkin_button);
-        int name_end = data.indexOf("zz");
-        profile_name.setText(data.substring(0, name_end));
-        int major_end = data.indexOf("yy");
-        profile_major.setText(data.substring(name_end+2, major_end));
-        int pref_end = data.indexOf("xx");
-        profile_pref.setText(data.substring(major_end+2, pref_end));
-        int bio_end = data.indexOf("ww");
-        profile_bio.setText(data.substring(pref_end+2, bio_end));
-        profile_status.setText(data.substring(bio_end+2));
+
+        DocumentReference docRef = db.collection("users").document(mAuth.getCurrentUser().getUid());
+        docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    DocumentSnapshot document = task.getResult();
+                    if (document.exists()) {
+                        Log.d(TAG, "DocumentSnapshot data: " + document.getData());
+                        TextView profile_name = findViewById(R.id.profile_name);
+                        TextView profile_major = findViewById(R.id.profile_major);
+                        TextView profile_pref = findViewById(R.id.profile_pref);
+                        TextView profile_bio = findViewById(R.id.profile_bio);
+                        ImageView profile_pic = findViewById(R.id.profile_picture);
+                        TextView profile_status = findViewById(R.id.status);
+                        profile_name.setText(document.getString("Name"));
+                        profile_major.setText(document.getString("Major"));
+                        profile_pref.setText(document.getString("Pref"));
+                        profile_bio.setText(document.getString("Bio"));
+                        profile_status.setText(document.getString("Status"));
+                    } else {
+                        Log.d(TAG, "No such document");
+                    }
+                } else {
+                    Log.d(TAG, "get failed with ", task.getException());
+                }
+            }
+        });
 
 
 
