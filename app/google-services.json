@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "108162902330",
+    "firebase_url": "https://foodwithfriends-3bba1.firebaseio.com",
+    "project_id": "foodwithfriends-3bba1",
+    "storage_bucket": "foodwithfriends-3bba1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108162902330:android:d817a21d00592833eec803",
+        "android_client_info": {
+          "package_name": "com.example.foodwithfriends"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108162902330-u748ofqj74cu2leqhaim16k83b11ugof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6jbjaEDuhex2oL3oqfz4fAU4hjQNB30s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108162902330-u748ofqj74cu2leqhaim16k83b11ugof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
