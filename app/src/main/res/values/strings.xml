@@ -14,6 +14,7 @@
     <string name="your_name">Your Name</string>
     <string name="todo">TODO</string>
     <string name="preference" />
+<<<<<<< Updated upstream
     <string name="title_activity_navtest">navtest</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -28,4 +29,7 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+=======
+    <string name="title_activity_testnav">testnav</string>
+>>>>>>> Stashed changes
 </resources>

@@ -125,6 +125,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <Button
+<<<<<<< Updated upstream
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -132,5 +133,13 @@
         android:text="Button"
         tools:layout_editor_absoluteX="132dp"
         tools:layout_editor_absoluteY="660dp" />
+=======
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="645dp" />
+>>>>>>> Stashed changes
 
 </androidx.constraintlayout.widget.ConstraintLayout>

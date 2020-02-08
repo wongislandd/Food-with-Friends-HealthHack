@@ -197,4 +197,8 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this, CheckInActivity.class);
         startActivity(intent);
     }
+    public void goTotest(View v){
+        Intent intent = new Intent(getApplicationContext(),testnav.class);
+        startActivity(intent);
+    }
 }
