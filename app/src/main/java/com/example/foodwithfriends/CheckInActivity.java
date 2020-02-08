@@ -28,6 +28,7 @@ public class CheckInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 v.playSoundEffect(android.view.SoundEffectConstants.CLICK);
+
                 //mp.start();
             }
         });
