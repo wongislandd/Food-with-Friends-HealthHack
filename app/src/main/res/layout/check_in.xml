@@ -17,9 +17,10 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="133dp"
+        android:layout_height="126dp"
         android:baselineAligned="false"
         android:contentDescription="TODO"
+        app:srcCompat="@mipmap/mapicon"
         tools:srcCompat="@mipmap/mapicon" />
 
     <Switch
