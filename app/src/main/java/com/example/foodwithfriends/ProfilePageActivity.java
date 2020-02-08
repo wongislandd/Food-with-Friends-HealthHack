@@ -41,7 +41,15 @@ public class ProfilePageActivity extends AppCompatActivity {
         final Button friend_button = findViewById(R.id.friend_button);
         final Button check_button = findViewById(R.id.checkin_button);
 
-        profile_name.setText(data);
+        int name_end = data.indexOf("zz");
+        profile_name.setText(data.substring(0, name_end));
+        int major_end = data.indexOf("yy");
+        profile_major.setText(data.substring(name_end+2, major_end));
+        int pref_end = data.indexOf("xx");
+        profile_pref.setText(data.substring(major_end+2, pref_end));
+        int bio_end = data.indexOf("ww");
+        profile_bio.setText(data.substring(pref_end+2, bio_end));
+
 
 
 
