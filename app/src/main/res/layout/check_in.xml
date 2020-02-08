@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="53dp"
-        android:text="          Check-In Status "
+        android:text="                  Status "
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="35sp" />
 
@@ -26,22 +26,8 @@
         android:id="@+id/switch2"
         android:layout_width="match_parent"
         android:layout_height="97dp"
-        android:text="East Side Dining"
+        android:text="Check In"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="22sp" />
-
-    <Switch
-        android:id="@+id/switch3"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:text="West Side Dining"
-        android:textSize="22sp" />
-
-    <Switch
-        android:id="@+id/switch4"
-        android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:text="Jasmine"
-        android:textSize="22sp" />
+        android:textSize="25sp" />
 
 </LinearLayout>
