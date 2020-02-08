@@ -43,7 +43,7 @@ public class CheckInActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if ((switch2.isChecked() == false) && (switch3.isChecked() == false) && (switch4.isChecked() == false) && (switch5.isChecked() == false)) {
                     Map<String, Object> user = new HashMap<>();
-                    user.put("Status", "East Side Dining");
+                    user.put("Status", "At East Side Dining");
                     db.collection("users")
                             .document(mAuth.getCurrentUser().getUid()).set(user
                     );
@@ -55,7 +55,7 @@ public class CheckInActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if ((switch1.isChecked() == false) && (switch3.isChecked() == false) && (switch4.isChecked() == false) && (switch5.isChecked() == false)) {
                     Map<String, Object> user = new HashMap<>();
-                    user.put("Status", "East Side Dining");
+                    user.put("Status", "At West Side Dining");
                     db.collection("users")
                             .document(mAuth.getCurrentUser().getUid()).set(user
                     );
@@ -67,7 +67,7 @@ public class CheckInActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if ((switch2.isChecked() == false) && (switch1.isChecked() == false) && (switch4.isChecked() == false) && (switch5.isChecked() == false)) {
                     Map<String, Object> user = new HashMap<>();
-                    user.put("Status", "East Side Dining");
+                    user.put("Status", "At Jasmine");
                     db.collection("users")
                             .document(mAuth.getCurrentUser().getUid()).set(user
                     );
@@ -79,7 +79,7 @@ public class CheckInActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if ((switch2.isChecked() == false) && (switch3.isChecked() == false) && (switch1.isChecked() == false) && (switch5.isChecked() == false)) {
                     Map<String, Object> user = new HashMap<>();
-                    user.put("Status", "East Side Dining");
+                    user.put("Status", "At Roth Cafe");
                     db.collection("users")
                             .document(mAuth.getCurrentUser().getUid()).set(user
                     );
@@ -91,7 +91,7 @@ public class CheckInActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if ((switch2.isChecked() == false) && (switch3.isChecked() == false) && (switch4.isChecked() == false) && (switch1.isChecked() == false)) {
                     Map<String, Object> user = new HashMap<>();
-                    user.put("Status", "East Side Dining");
+                    user.put("Status", "At SAC Food Court");
                     db.collection("users")
                             .document(mAuth.getCurrentUser().getUid()).set(user
                     );
