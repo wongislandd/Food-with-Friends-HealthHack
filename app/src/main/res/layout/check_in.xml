@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:text="                  Status "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:baselineAligned="false"
+        tools:srcCompat="@mipmap/mapicon"
+        android:contentDescription="TODO" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:text="@string/check_in"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25sp" />
+
+</LinearLayout>
