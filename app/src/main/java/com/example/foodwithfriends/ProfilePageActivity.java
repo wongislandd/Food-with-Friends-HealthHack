@@ -41,7 +41,6 @@ public class ProfilePageActivity extends AppCompatActivity {
         final TextView profile_status = findViewById(R.id.status);
         final Button friend_button = findViewById(R.id.friend_button);
         final Button check_button = findViewById(R.id.checkin_button);
-
         int name_end = data.indexOf("zz");
         //profile_name.setText(data.substring(0, name_end));
         int major_end = data.indexOf("yy");
