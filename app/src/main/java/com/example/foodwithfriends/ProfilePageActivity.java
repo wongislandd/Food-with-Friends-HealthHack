@@ -26,7 +26,6 @@ public class ProfilePageActivity extends AppCompatActivity {
         final Button friend_button = findViewById(R.id.friend_button);
         final Button check_button = findViewById(R.id.checkin_button);
 
-        profile_name.setText("Test: Hello World");
 
         friend_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,11 +33,20 @@ public class ProfilePageActivity extends AppCompatActivity {
                 goToFriendsPage();
             }
         });
-
-
+        check_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToCheckInpage();
+            }
+        });
     }
+
     public void goToFriendsPage(){
         Intent intent = new Intent(ProfilePageActivity.this, MyFriendsActivity.class);
+        startActivity(intent);
+    }
+    public void goToCheckInpage() {
+        Intent intent = new Intent(ProfilePageActivity.this, CheckInActivity.class);
         startActivity(intent);
     }
 }
