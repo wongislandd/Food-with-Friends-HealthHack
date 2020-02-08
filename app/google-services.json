@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "108162902330-qmvrs8j85jj2o8pedrp8iht69udcenih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodwithfriends",
+            "certificate_hash": "d341a30f2a75f95cbe06743c1d678862829309e6"
+          }
+        },
+        {
           "client_id": "108162902330-1bigkqgj1sqfo5htf7712l6eppkf3f53.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
