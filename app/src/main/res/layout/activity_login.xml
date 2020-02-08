@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".LoginActivity">
 
     <EditText
         android:id="@+id/username"
@@ -97,5 +97,32 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/sbudog"
         tools:srcCompat="@drawable/sbudog" />
+
+    <Button
+        android:id="@+id/hajime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hajime"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="334dp" />
+
+    <Button
+        android:id="@+id/izan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginEnd="49dp"
+        android:text="Izan"
+        app:layout_constraintEnd_toStartOf="@+id/matt"
+        app:layout_constraintStart_toStartOf="@+id/hajime"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <Button
+        android:id="@+id/matt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matt"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="326dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

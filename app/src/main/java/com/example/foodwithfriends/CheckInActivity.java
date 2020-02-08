@@ -15,7 +15,7 @@ public class CheckInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.check_in);
 
-        
+
 
     }
 }

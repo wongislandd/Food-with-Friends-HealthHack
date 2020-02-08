@@ -20,7 +20,7 @@ public class ProfilePageActivity extends AppCompatActivity {
         final TextView profile_bio = findViewById(R.id.profile_bio);
         final ImageView profile_pic = findViewById(R.id.profile_picture);
 
-        profile_name.setText("Test: Hi");
+        profile_name.setText("Test: Hello World");
 
 
     }
