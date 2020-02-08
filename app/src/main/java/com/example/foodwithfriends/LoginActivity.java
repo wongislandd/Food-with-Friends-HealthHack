@@ -178,10 +178,6 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this, MyFriendsActivity.class);
         startActivity(intent);
     }
-    public void testnav(View view) {
-        Intent intent = new Intent(getApplicationContext(),MyFriendsActivity.class);
-        startActivity(intent);
-    }
         public void goToRegisterPage(){
         Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
         startActivity(intent);
@@ -192,10 +188,6 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void goToCheckInPage(){
         Intent intent = new Intent(LoginActivity.this, CheckInActivity.class);
-        startActivity(intent);
-    }
-    public void goTotest(View v){
-        Intent intent = new Intent(getApplicationContext(),testnav.class);
         startActivity(intent);
     }
 }
