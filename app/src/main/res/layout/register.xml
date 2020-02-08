@@ -31,32 +31,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Name"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/text_major"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="59dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Major" />
+            android:hint="Major"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/text_pref"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Dining Hall Preference" />
+            android:hint="Dining Hall Preference"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/text_bio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Bio" />
+            android:hint="Bio"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <Button
