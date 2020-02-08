@@ -174,7 +174,11 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this, MyFriendsActivity.class);
         startActivity(intent);
     }
-    public void goToRegisterPage(){
+    public void testnav(View view) {
+        Intent intent = new Intent(getApplicationContext(),MyFriendsActivity.class);
+        startActivity(intent);
+    }
+        public void goToRegisterPage(){
         Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
         startActivity(intent);
     }

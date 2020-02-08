@@ -42,7 +42,7 @@ public class ProfilePageActivity extends AppCompatActivity {
         final Button check_button = findViewById(R.id.checkin_button);
 
         int name_end = data.indexOf("zz");
-        profile_name.setText(data.substring(0, name_end));
+        //profile_name.setText(data.substring(0, name_end));
         int major_end = data.indexOf("yy");
         profile_major.setText(data.substring(name_end+2, major_end));
         int pref_end = data.indexOf("xx");
