@@ -60,7 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
                 db.collection("users")
                         .document(mAuth.getCurrentUser().getUid()).set(user
                 );
-                goToProfilePage();
+                //goToProfilePage();
             }
         });
 

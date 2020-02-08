@@ -151,7 +151,6 @@ public class LoginActivity extends AppCompatActivity {
     public void register(String email, String password){
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    Map<String, Object> user = new HashMap<>();
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
