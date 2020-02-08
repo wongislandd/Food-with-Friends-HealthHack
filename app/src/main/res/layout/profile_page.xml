@@ -28,54 +28,55 @@
 
     <LinearLayout
         android:id="@+id/box"
-        android:layout_width="200dp"
-        android:layout_height="114dp"
+        android:layout_width="219dp"
+        android:layout_height="172dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
         android:layout_marginBottom="531dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@+id/profile_picture"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238">
 
         <TextView
             android:id="@+id/profile_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/your_name" />
+            android:layout_width="240dp"
+            android:layout_height="87dp"
+            android:text="@string/your_name"
+            android:textSize="26sp" />
 
         <TextView
             android:id="@+id/profile_major"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/your_major" />
+            android:text="@string/your_major"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/profile_pref"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your Preference" />
+            android:text="Your Preference"
+            android:textSize="22sp" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/profile_bio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
+        android:layout_width="300dp"
+        android:layout_height="223dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="317dp"
-        android:layout_marginRight="317dp"
         android:layout_marginBottom="414dp"
         android:text="@string/your_bio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_picture" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_picture"
+        app:layout_constraintVertical_bias="0.014"
+        tools:textSize="22sp" />
 
     <TextView
         android:id="@+id/status"
@@ -95,16 +96,12 @@
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="291dp"
         android:layout_marginEnd="29dp"
-        android:layout_marginRight="29dp"
         android:layout_marginBottom="15dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_bio">
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
