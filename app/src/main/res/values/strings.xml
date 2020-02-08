@@ -13,4 +13,5 @@
     <string name="your_major">Your Major</string>
     <string name="your_name">Your Name</string>
     <string name="todo">TODO</string>
+    <string name="preference" />
 </resources>
