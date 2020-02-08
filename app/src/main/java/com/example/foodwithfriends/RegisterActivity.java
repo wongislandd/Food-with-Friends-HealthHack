@@ -30,6 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
         Complete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 goToProfilePage();
             }
         });
