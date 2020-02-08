@@ -21,7 +21,6 @@ public class ProfilePageActivity extends AppCompatActivity {
         final ImageView profile_pic = findViewById(R.id.profile_picture);
 
         profile_name.setText("Test: Hello World");
-        //ss
 
 
     }
