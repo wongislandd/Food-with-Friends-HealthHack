@@ -15,22 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "108162902330-7krvnjfv63jbj1ietrdcf3q1s2jghqkm.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.foodwithfriends",
-            "certificate_hash": "a0e5c5a8ba4c15c00f16263dd3df3431f6218700"
-          }
-        },
-        {
-          "client_id": "108162902330-spdbou2666a4j335p49ubds2r269sm4l.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.foodwithfriends",
-            "certificate_hash": "5f49903cddc3cb939204481889eaf1bf5144078b"
-          }
-        },
-        {
           "client_id": "108162902330-qmvrs8j85jj2o8pedrp8iht69udcenih.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

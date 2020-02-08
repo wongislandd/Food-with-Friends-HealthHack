@@ -1,6 +1,5 @@
 package com.example.foodwithfriends;
 
-import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -30,22 +29,8 @@ public class CheckInActivity extends AppCompatActivity {
                 v.playSoundEffect(android.view.SoundEffectConstants.CLICK);
                 //mp.start();
             }
-        }
-        );
+        });
 
 
-
-    }
-    public void goToProfile(View view) {
-        Intent intent = new Intent(getApplicationContext(),ProfilePageActivity.class);
-        startActivity(intent);
-    }
-    public void goToCheckIn(View view) {
-        Intent intent = new Intent(getApplicationContext(),CheckInActivity.class);
-        startActivity(intent);
-    }
-    public void myFriends(View view) {
-        Intent intent = new Intent(getApplicationContext(),MyFriendsActivity.class);
-        startActivity(intent);
     }
 }
