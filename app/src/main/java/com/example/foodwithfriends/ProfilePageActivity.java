@@ -38,6 +38,7 @@ public class ProfilePageActivity extends AppCompatActivity {
         final TextView profile_pref = findViewById(R.id.profile_pref);
         final TextView profile_bio = findViewById(R.id.profile_bio);
         final ImageView profile_pic = findViewById(R.id.profile_picture);
+        final TextView profile_status = findViewById(R.id.status);
         final Button friend_button = findViewById(R.id.friend_button);
         final Button check_button = findViewById(R.id.checkin_button);
 
@@ -49,7 +50,7 @@ public class ProfilePageActivity extends AppCompatActivity {
         profile_pref.setText(data.substring(major_end+2, pref_end));
         int bio_end = data.indexOf("ww");
         profile_bio.setText(data.substring(pref_end+2, bio_end));
-
+        profile_status.setText(data.substring(bio_end+2));
 
 
 
