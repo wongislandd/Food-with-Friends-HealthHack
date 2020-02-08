@@ -1,6 +1,7 @@
 package com.example.foodwithfriends;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -17,8 +18,9 @@ public class ProfilePageActivity extends AppCompatActivity {
         final TextView profile_major = findViewById(R.id.profile_major);
         final TextView profile_pref = findViewById(R.id.profile_pref);
         final TextView profile_bio = findViewById(R.id.profile_bio);
+        final ImageView profile_pic = findViewById(R.id.profile_picture);
 
-        profile_bio.setText("hi");
+        profile_name.setText("Test: Hi");
 
 
     }
