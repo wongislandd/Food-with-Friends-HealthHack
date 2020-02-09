@@ -45,8 +45,7 @@ public class CheckInActivity extends AppCompatActivity {
                     Map<String, Object> user = new HashMap<>();
                     user.put("Status", "At East Side Dining");
                     db.collection("users")
-                            .document(mAuth.getCurrentUser().getUid()).set(user
-                    );
+                            .document(mAuth.getCurrentUser().getUid()).update(user);
                 }
             }
         });
@@ -57,7 +56,7 @@ public class CheckInActivity extends AppCompatActivity {
                     Map<String, Object> user = new HashMap<>();
                     user.put("Status", "At West Side Dining");
                     db.collection("users")
-                            .document(mAuth.getCurrentUser().getUid()).set(user
+                            .document(mAuth.getCurrentUser().getUid()).update(user
                     );
                 }
             }
@@ -69,7 +68,7 @@ public class CheckInActivity extends AppCompatActivity {
                     Map<String, Object> user = new HashMap<>();
                     user.put("Status", "At Jasmine");
                     db.collection("users")
-                            .document(mAuth.getCurrentUser().getUid()).set(user
+                            .document(mAuth.getCurrentUser().getUid()).update(user
                     );
                 }
             }
@@ -81,7 +80,7 @@ public class CheckInActivity extends AppCompatActivity {
                     Map<String, Object> user = new HashMap<>();
                     user.put("Status", "At Roth Cafe");
                     db.collection("users")
-                            .document(mAuth.getCurrentUser().getUid()).set(user
+                            .document(mAuth.getCurrentUser().getUid()).update(user
                     );
                 }
             }
@@ -93,7 +92,7 @@ public class CheckInActivity extends AppCompatActivity {
                     Map<String, Object> user = new HashMap<>();
                     user.put("Status", "At SAC Food Court");
                     db.collection("users")
-                            .document(mAuth.getCurrentUser().getUid()).set(user
+                            .document(mAuth.getCurrentUser().getUid()).update(user
                     );
                 }
             }
