@@ -3,6 +3,7 @@ package com.example.foodwithfriends;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Paint;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,6 +41,22 @@ public class FriendRecyclerViewAdapter extends RecyclerView.Adapter<FriendRecycl
         Log.d(TAG, "onBindViewHolder: called");
         holder.usersname.setText(users.get(position).getName());
         holder.userstatus.setText(users.get(position).getStatus());
+        holder.parentLayout.setOnLongClickListener(new View.OnLongClickListener(){
+            @Override
+            public boolean onLongClick(View view) {
+                String id = users.get(position).getUserID();
+                moveToProfile(id);
+                return true;
+            }
+        });
+    }
+
+    public void moveToProfile(String id){
+        Intent intent = new Intent(this.mContext,FriendsProfilePageActivity.class);
+        Bundle b = new Bundle();
+        b.putString("id", id); //Your id
+        intent.putExtras(b); //Put your id to your next Intent
+        mContext.startActivity(intent);
     }
 
     @Override

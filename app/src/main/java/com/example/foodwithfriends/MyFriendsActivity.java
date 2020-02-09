@@ -49,7 +49,7 @@ public class MyFriendsActivity extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Log.d(TAG, document.getId() + " => " + document.getData());
                                 users.add(new User(document.getString("Bio"),document.getString("Major"),document.getString("Name"),document.getString("Pref"),
-                                        document.getString("Status")));
+                                        document.getString("Status"),document.getString("Id")));
                             }
                             initRecyclerView();
                         } else {

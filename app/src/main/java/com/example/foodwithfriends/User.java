@@ -6,12 +6,22 @@ public class User {
     String name;
     String pref;
     String status;
-    public User(String bio, String major, String name, String pref, String status){
+    String userID;
+    public User(String bio, String major, String name, String pref, String status, String userID){
         this.bio = bio;
         this.major = major;
         this.name = name;
         this.pref = pref;
         this.status = status;
+        this.userID = userID;
+    }
+
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
     }
 
     public String getBio() {

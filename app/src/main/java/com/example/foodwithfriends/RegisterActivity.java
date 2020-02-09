@@ -40,7 +40,6 @@ public class RegisterActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
-
         final Button Complete = findViewById(R.id.complete);
         final EditText name = findViewById(R.id.text_name);
         final EditText major = findViewById(R.id.text_major);
@@ -56,6 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
                 user.put("Pref", pref.getText().toString());
                 user.put("Bio", bio.getText().toString());
                 user.put("Status", "Nowhere");
+                user.put("Id",mAuth.getCurrentUser().getUid());
                 // Write a message to the database
                 db.collection("users")
                         .document(mAuth.getCurrentUser().getUid()).set(user
