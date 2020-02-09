@@ -48,29 +48,6 @@ public class LoginActivity extends AppCompatActivity {
         final Button registerButton = findViewById(R.id.registerBtn);
         final Button loginButton = findViewById(R.id.loginButton);
         final ProgressBar loadingProgressBar = findViewById(R.id.loading);
-        final Button izan = findViewById((R.id.izan));
-        final Button hajime = findViewById((R.id.hajime));
-        final Button matt = findViewById((R.id.matt));
-        izan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               goToCheckInPage();
-            }
-        });
-        matt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goToProfilePage();
-            }
-        });
-
-        hajime.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goToFriendsPage();
-            }
-        });
-
 
 
         TextWatcher afterTextChangedListener = new TextWatcher() {

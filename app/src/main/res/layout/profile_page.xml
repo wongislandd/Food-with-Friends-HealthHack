@@ -39,11 +39,10 @@
         android:id="@+id/profile_bio"
         android:layout_width="249dp"
         android:layout_height="105dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="76dp"
         android:text="@string/your_bio"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_major" />
 
@@ -74,7 +73,7 @@
     <LinearLayout
         android:id="@+id/box2"
         android:layout_width="350dp"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="15dp"
