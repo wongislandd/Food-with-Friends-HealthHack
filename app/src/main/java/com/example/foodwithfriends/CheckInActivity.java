@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
@@ -37,6 +38,17 @@ public class CheckInActivity extends AppCompatActivity {
         final Switch switch3 = this.findViewById(R.id.switch3);
         final Switch switch4 = this.findViewById(R.id.switch4);
         final Switch switch5 = this.findViewById(R.id.switch5);
+        final Button clear = this.findViewById(R.id.clear);
+
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Map<String, Object> user = new HashMap<>();
+                user.put("Status", "Away");
+                db.collection("users")
+                        .document(mAuth.getCurrentUser().getUid()).update(user);
+            }
+        });
 
         switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
