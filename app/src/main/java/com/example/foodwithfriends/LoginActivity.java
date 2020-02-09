@@ -26,6 +26,19 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+
+
+
+
+
+
+
+/* Future improvements:
+    - Geo location to avoid manual logging of checking in
+    - Notifications for when friends check in
+
+
+*/
 public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private static final String TAG = "LoginActivity";
