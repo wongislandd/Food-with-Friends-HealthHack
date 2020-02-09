@@ -37,9 +37,10 @@
 
     <TextView
         android:id="@+id/profile_bio"
-        android:layout_width="249dp"
-        android:layout_height="105dp"
-        android:layout_marginTop="76dp"
+        android:layout_width="247dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center_horizontal"
         android:text="@string/your_bio"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,8 +49,8 @@
 
     <ImageView
         android:id="@+id/profile_picture"
-        android:layout_width="155dp"
-        android:layout_height="273dp"
+        android:layout_width="153dp"
+        android:layout_height="152dp"
         android:layout_marginBottom="442dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,7 +63,7 @@
         android:id="@+id/profile_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="284dp"
+        android:layout_marginBottom="224dp"
         android:text="Status"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/box2"

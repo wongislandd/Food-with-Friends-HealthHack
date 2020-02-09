@@ -26,7 +26,7 @@
     <Switch
         android:id="@+id/switch1"
         android:layout_width="match_parent"
-        android:layout_height="63dp"
+        android:layout_height="51dp"
         android:text="  East Side Dining"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="22sp" />
@@ -34,14 +34,14 @@
     <Switch
         android:id="@+id/switch2"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="45dp"
         android:text="  West Side Dining"
         android:textSize="22sp" />
 
     <Switch
         android:id="@+id/switch3"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="44dp"
         android:text="  Jasmine"
         android:textAllCaps="false"
         android:textSize="22sp" />
@@ -49,16 +49,22 @@
     <Switch
         android:id="@+id/switch4"
         android:layout_width="match_parent"
-        android:layout_height="63dp"
+        android:layout_height="57dp"
         android:text="  Roth Cafe"
         android:textSize="22sp" />
 
     <Switch
         android:id="@+id/switch5"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="51dp"
         android:text="  SAC Food Court"
         android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Location" />
 
     <Button
         android:id="@+id/button4"
