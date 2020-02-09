@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.foodwithfriends">
+    package="com.hackhealth.foodwithfriends">
 
     <dist:module dist:instant="true" />
 
@@ -10,12 +10,13 @@
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:icon="@mipmap/ic_launcher"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         android:Updated
         android:upstream
         <activity
-            android:name=".LoginActivity"
+            android:name="com.hackhealth.foodwithfriends.LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,19 +25,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ProfilePageActivity"
+            android:name="com.hackhealth.foodwithfriends.ProfilePageActivity"
             android:label="@string/app_name"></activity>
         <activity
-            android:name=".FriendsProfilePageActivity"
+            android:name="com.hackhealth.foodwithfriends.FriendsProfilePageActivity"
             android:label="@string/app_name"></activity>
         <activity
-            android:name=".CheckInActivity"
+            android:name="com.hackhealth.foodwithfriends.CheckInActivity"
             android:label="@string/app_name"></activity>
         <activity
-            android:name=".MyFriendsActivity"
+            android:name="com.hackhealth.foodwithfriends.MyFriendsActivity"
             android:label="@string/app_name"></activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.hackhealth.foodwithfriends.RegisterActivity"
             android:label="@string/app_name"></activity>
     </application>
 
